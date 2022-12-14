@@ -1,0 +1,21 @@
+#include <iostream>
+#include "windows.h"
+
+using namespace std;
+
+int main()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+    int a, r, h;
+    float (S = 3,14 * pow(r, 2)), (V = 2), (L = 3);
+    cout << "Введіть S(площа круга) або V(об'єм циліндра) або L(довжина кола)" << endl;
+    cin >> a;
+    switch (a)
+    {
+    case S: cout << "S = pi * pow(r, 2)"; break;
+    case 2: cout << "V = 2 * pi * r"; break;
+    case 3: cout << "L = pi * pow(r, 2) * h"; break;
+    default: cout << "Не існує"; break;
+    }
+}
